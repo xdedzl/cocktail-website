@@ -9,9 +9,15 @@ export default function Home() {
   const [filteredCocktails, setFilteredCocktails] = useState(cocktails);
   const [activeFilters, setActiveFilters] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [activeGlass, setActiveGlass] = useState(null);
 
   useEffect(() => {
     let result = cocktails;
+    
+    // 更新筛选逻辑
+    if (activeGlass) {
+      result = result.filter(cocktail => cocktail.glass === activeGlass);
+    }
     
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
@@ -45,24 +51,14 @@ export default function Home() {
     setSearchTerm('');
   };
 
+  const toggleGlassFilter = (glassType) => {
+    setActiveGlass(activeGlass === glassType ? null : glassType);
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
-      <Head>
-        <title>Cocktail Grid - 发现完美的鸡尾酒</title>
-        <meta name="description" content="探索我们精心调制的鸡尾酒收藏" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <div className="min-h-screen">
       <Header />
-      
-      <main className="container mx-auto px-4 py-8">
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-amber-800 mb-2">鸡尾酒+</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            探索我们精选的经典和创意鸡尾酒配方。使用筛选器找到您完美的饮料！
-          </p>
-        </div>
-
+      <main className="container mx-auto px-4 py-12">
         {/* 搜索和筛选区域 */}
         <div className="max-w-4xl mx-auto mb-12 p-6 bg-white rounded-xl shadow-md">
           <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -83,10 +79,13 @@ export default function Home() {
             </button>
           </div>
           
+          {/* Update FilterBar usage */}
           <FilterBar 
             allTags={allTags} 
             activeFilters={activeFilters} 
-            toggleFilter={toggleFilter} 
+            toggleFilter={toggleFilter}
+            activeGlass={activeGlass}
+            toggleGlassFilter={toggleGlassFilter}
           />
         </div>
 
