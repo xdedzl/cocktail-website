@@ -3,16 +3,27 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import FilterBar from '../components/FilterBar';
 import CocktailCard from '../components/CocktailCard';
-import { cocktails, allTags } from '../data/cocktails';
+// 修改导入语句
+import { cocktails, allTags, allGlasses, allIngredients } from '../data/cocktails';
 
 export default function Home() {
   const [filteredCocktails, setFilteredCocktails] = useState(cocktails);
   const [activeFilters, setActiveFilters] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeGlass, setActiveGlass] = useState(null);
+  const [activeIngredients, setActiveIngredients] = useState([]); // 改为数组存储
 
+  // 更新useEffect筛选逻辑
   useEffect(() => {
     let result = cocktails;
+    
+    if (activeIngredients) {
+      result = result.filter(cocktail => 
+        cocktail.ingredients.some(ing => 
+          ing.toLowerCase().includes(activeIngredients)
+        )
+      );
+    }
     
     // 更新筛选逻辑
     if (activeGlass) {
@@ -36,7 +47,16 @@ export default function Home() {
     }
     
     setFilteredCocktails(result);
-  }, [activeFilters, searchTerm]);
+  }, [activeFilters, searchTerm, activeGlass, activeIngredients]); // 更新依赖项
+
+  // 修改成分筛选方法
+  const toggleIngredientFilter = (ingredient) => {
+    setActiveIngredients(prev => 
+      prev.includes(ingredient) 
+        ? prev.filter(i => i !== ingredient)
+        : [...prev, ingredient]
+    );
+  };
 
   const toggleFilter = (tag) => {
     if (activeFilters.includes(tag)) {
@@ -49,10 +69,12 @@ export default function Home() {
   const clearFilters = () => {
     setActiveFilters([]);
     setSearchTerm('');
+    setActiveGlass(null);       // 新增重置杯型筛选
+    setActiveIngredients([]);  // 新增重置成分筛选
   };
 
   const toggleGlassFilter = (glassType) => {
-    setActiveGlass(activeGlass === glassType ? null : glassType);
+    setActiveGlass(prev => prev === glassType ? null : glassType);
   };
 
   return (
@@ -82,10 +104,14 @@ export default function Home() {
           {/* Update FilterBar usage */}
           <FilterBar 
             allTags={allTags} 
+            allGlasses={allGlasses}  // 新增杯型prop
             activeFilters={activeFilters} 
             toggleFilter={toggleFilter}
             activeGlass={activeGlass}
             toggleGlassFilter={toggleGlassFilter}
+            allIngredients={allIngredients}
+            activeIngredients={activeIngredients}
+            toggleIngredientFilter={toggleIngredientFilter}
           />
         </div>
 

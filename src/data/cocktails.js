@@ -3,8 +3,8 @@ const cocktails = [
       id: 1,
       name: "朗姆牛奶",
       description: "以朗姆酒为基础，加入鲜牛奶，口感清爽，适合任何场合。",
-      ingredients: ["15ml白朗姆", "15ml黑朗姆", "15ml糖浆", "90ml鲜牛奶"],
-      method: "yaohuang",
+      ingredients: ["白朗姆 15ml", "黑朗姆 15ml", "糖浆 15ml", "鲜牛奶 90ml"],
+      method: "摇合",
       tags: ["朗姆酒", "低酒精", "甜", "白色"],
       color: "#7EB37A",
       abv: "15%",
@@ -45,7 +45,7 @@ const cocktails = [
       id: 4,
       name: "教父",
       description: "空",
-      ingredients: ["威士忌45ml", "杏仁利口酒 15ml"],
+      ingredients: ["威士忌 45ml", "杏仁利口酒 15ml"],
       method: "在杯中搅拌均匀",
       tags: ["威士忌", "苦甜", "琥珀色"],
       color: "#B97233",
@@ -59,7 +59,7 @@ const cocktails = [
       id: 5,
       name: "甜教父",
       description: "甜教父",
-      ingredients: ["威士忌20ml", "杏仁利口酒10ml，橙汁30ml"],
+      ingredients: ["威士忌 20ml", "杏仁利口酒 10ml", "橙汁 30ml"],
       method: "加入所有配料摇合",
       tags: ["威士忌"],
       color: "#B97233",
@@ -73,7 +73,7 @@ const cocktails = [
       id: 6,
       name: "威士忌嗨棒 * HighBall",
       description: "HighBall是一系列烈酒加碳酸饮料的统称，最常见的是威士忌加苏打水，在日本特指这款，有时会加柠檬鸡尾酒的统称，",
-      ingredients: ["威士忌一份", "两到四份苏打水"],
+      ingredients: ["威士忌 一份", "苏打水 两到四份"],
       method: "简单搅拌",
       tags: ["威士忌", "苏打水"],
       color: "#B97233",
@@ -86,8 +86,8 @@ const cocktails = [
     {
       id: 7,
       name: "杏仁酸 | Amaretto Sour",
-      description: "null",
-      ingredients: ["杏仁利口酒40ml", "柠檬汁20ml", "威士忌15ml", "柠檬汁20ml", "糖浆5ml"],
+      description: "无",
+      ingredients: ["杏仁利口酒 40ml", "柠檬汁 20ml", "威士忌 15ml", "柠檬汁 20ml", "糖浆 5ml"],
       method: "简单搅拌,可以用蜂蜜替换糖浆",
       tags: ["威士忌", "杏仁利口酒", "酸"],
       color: "#B97233",
@@ -101,7 +101,7 @@ const cocktails = [
       id: 8,
       name: "玛格丽特 | Margaret",
       description: "1949年，美国举行全国鸡尾酒大赛。一位洛杉矶的酒吧调酒师Jean Durasa参赛。这款鸡尾酒正是他的冠军之作。之所以命名为Margarita cocktail，是想纪念他的已故恋人Margarita。1926年，Jean Durasa去墨西哥，与Margarita相恋，墨西哥成了他们的浪漫之地。然而，有一次当两人去野外打猎时，玛格丽特中了流弹，最后倒在恋人Jean Durasa的怀中，永远离开了。于是，Jean Durasa就用墨西哥的国酒Tequila为鸡尾酒的基酒，用柠檬汁的酸味代表心中的酸楚，用盐霜意喻怀念的泪水。如今，Margarita在世界酒吧流行的同时，也成为Tequila的代表鸡尾酒[2] 。   当生活给了你柠檬的时候，记得问他要一点盐，同时再问他要点龙舌兰",
-      ingredients: ["龙舌兰45ml", "君度25ml", "半个柠檬压汁"],
+      ingredients: ["龙舌兰 45ml", "君度 25ml", "柠檬汁 15ml"],
       method: "摇合",
       tags: ["龙舌兰", "君度", "柠檬"],
       color: "#B97233",
@@ -114,13 +114,13 @@ const cocktails = [
     {
       id: 9,
       name: "龙舌兰日出 | Tequila Sunrise",
-      description: "null",
-      ingredients: ["龙舌兰45ml", "柠檬汁15ml", "橙汁", "红石榴糖浆"],
+      description: "无",
+      ingredients: ["龙舌兰 45ml", "柠檬汁 15ml", "橙汁", "红石榴糖浆"],
       method: "搅拌后加入红石榴糖浆提拉",
       tags: ["龙舌兰", "柠檬汁", "橙汁", "红石榴糖浆"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "高球杯",
       image: "/images/tequila-sunrise.jpg"
@@ -134,7 +134,7 @@ const cocktails = [
       tags: ["白兰地", "朗姆酒", "威士忌", "伏特加", "柠檬汁", "蓝橙酒"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "长饮杯",
       image: "/images/see-you-tomorrow.jpg"
@@ -148,7 +148,7 @@ const cocktails = [
       tags: ["伏特加", "橙汁"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "长饮杯",
       image: "/images/screwdriver-cocktail.jpg"
@@ -157,26 +157,26 @@ const cocktails = [
       id: 12,
       name: "占有欲 | Possessive",
       description: "'螺丝刀'起源于上个世纪五六十年代在伊朗油田工作的美国工人，他们大多嗜酒及喜欢橙汁。为了缓解天气炎热，他们当时即兴就把橙汁兑在伏特加里，并用随身携带的螺丝刀搅拌几下，此酒从此风靡全球……",
-      ingredients: ["伏特加45ml", "葡萄汁45ml", "水溶C"],
+      ingredients: ["伏特加 45ml", "葡萄汁 45ml", "水溶C"],
       method: "满冰，水溶C8分满，果汁和酒摇合后倒入",
       tags: ["伏特加", "葡萄汁", "水溶C"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
-      garnish: "null",
+      origin: "无",
+      garnish: "无",
       glass: "威士忌杯",
       image: "/images/possessive.jpg"
     },
     {
       id: 13,
       name: "暮光之城 | Twilight",
-      description: "null",
+      description: "无",
       ingredients: [],
       method: "满冰，橙汁7分满，加入红石榴糖浆提拉，加入雪碧或者苏打水补满",
       tags: ["橙汁", "雪碧", "红石榴糖浆"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "香槟杯",
       image: "/images/twilight.jpg"
@@ -184,13 +184,13 @@ const cocktails = [
     {
       id: 14,
       name: "红叶如霜 | 蓝颜旧梦",
-      description: "null",
+      description: "无",
       ingredients: [],
       method: "苏打水加入红石榴糖浆，苏打水加入蓝橙酒",
       tags: ["苏打水", "蓝橙酒", "红石榴糖浆"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "shot杯",
       image: "/images/red-blue.jpg"
@@ -198,13 +198,13 @@ const cocktails = [
     {
       id: 15,
       name: "长岛冰茶 | Long Island Ice Tea",
-      description: "null",
-      ingredients: ["金酒15ml", "朗姆酒15ml", "伏特加15ml", "龙舌兰15ml", "君度15ml", "柠檬汁15ml", "可乐适量", "糖浆一勺"],
+      description: "无",
+      ingredients: ["金酒 15ml", "朗姆酒 15ml", "伏特加 15ml", "龙舌兰 15ml", "君度 15ml", "柠檬汁 15ml", "可乐 适量", "糖浆 一勺"],
       method: "搅拌",
       tags: ["金酒", "朗姆酒", "伏特加", "龙舌兰", "君度", "柠檬汁", "可乐", "糖浆"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "柠檬",
       glass: "长饮杯",
       image: "/images/long-island-ice-tea.jpg"
@@ -212,13 +212,13 @@ const cocktails = [
     {
       id: 16,
       name: "彩虹酒",
-      description: "null",
+      description: "无",
       ingredients: [],
       method: "满冰，橙汁6分满，加入红石榴糖浆提拉，加入雪碧或者苏打水，蓝橙酒15ml加任一基酒30ml摇合后倒入",
       tags: ["橙汁", "红石榴糖浆", "雪碧", "柠檬汁", "蓝橙酒"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "无",
       glass: "长饮杯",
       image: "/images/rainbow.jpg"
@@ -226,13 +226,13 @@ const cocktails = [
     {
       id: 17,
       name: "红粉佳人 | Pink lady",
-      description: "null",
-      ingredients: ["金酒45ml", "君度15ml", "柠檬汁15ml", "红糖浆一勺", "一个鸡蛋白"],
+      description: "无",
+      ingredients: ["金酒 45ml", "君度 15ml", "柠檬汁 15ml", "红糖浆 一勺", "鸡蛋白 一个"],
       method: "摇合",
       tags: ["金酒", "君度", "柠檬汁", "红石榴糖浆", "鸡蛋"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "无",
       glass: "马天尼杯",
       image: "/images/pink-lady.jpg"
@@ -240,8 +240,8 @@ const cocktails = [
     {
       id: 18,
       name: "青苹果乐园 | green apple park",
-      description: "null",
-      ingredients: ["苹果梅酒一份", "雪碧一份", "苹果"],
+      description: "无",
+      ingredients: ["苹果梅酒 一份", "雪碧 一份", "苹果"],
       method: "搅拌",
       tags: ["梅酒", "雪碧", "苹果"],
       color: "#B97233",
@@ -254,13 +254,13 @@ const cocktails = [
     {
       id: 19,
       name: "尼格罗尼 | negroni",
-      description: "null",
-      ingredients: ["金酒一份", "味美思一份", "金巴利一份"],
+      description: "无",
+      ingredients: ["金酒 一份", "味美思 一份", "金巴利 一份"],
       method: "搅拌",
       tags: ["梅酒", "雪碧", "苹果"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "橙皮",
       glass: "威士忌杯",
       image: "/images/negroni.jpg"
@@ -268,13 +268,13 @@ const cocktails = [
     {
       id: 20,
       name: "边车 | Side car",
-      description: "null",
-      ingredients: ["干邑白兰地40ml, 君度20ml, 柠檬汁15ml"],
+      description: "无",
+      ingredients: ["干邑白兰地 40ml, 君度 20ml, 柠檬汁 15ml"],
       method: "先冰杯，摇合并过滤后倒入",
       tags: ["白兰地", "君度", "柠檬汁"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "无",
       glass: "马天尼杯",
       image: "/images/side-car.jpg"
@@ -282,13 +282,13 @@ const cocktails = [
     {
       id: 21,
       name: "朗姆车 | rum car",
-      description: "null",
-      ingredients: ["朗姆酒40ml, 君度20ml, 柠檬汁15ml"],
+      description: "无",
+      ingredients: ["朗姆酒 40ml, 君度 20ml, 柠檬汁 15ml"],
       method: "先冰杯，摇合并过滤后倒入",
       tags: ["朗姆酒", "君度", "柠檬汁"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "无",
       glass: "马天尼杯",
       image: "/images/rum-car.jpg"
@@ -296,13 +296,13 @@ const cocktails = [
     {
       id: 22,
       name: "床底之间 | Betweent The Sheets",
-      description: "null",
-      ingredients: ["干邑白兰地15ml, 白朗姆15ml, 君度15ml, 柠檬汁15ml"],
+      description: "无",
+      ingredients: ["干邑白兰地 15ml, 白朗姆 15ml, 君度 15ml, 柠檬汁 15ml"],
       method: "先冰杯，摇合并过滤后倒入",
       tags: ["白兰地", "朗姆酒", "君度", "柠檬汁"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "无",
       glass: "",
       image: "/images/betweent-the-sheets.jpg"
@@ -310,13 +310,13 @@ const cocktails = [
     {
       id: 23,
       name: "金茉莉 | Jasmine tea gin",
-      description: "null",
-      ingredients: ["金酒30ml", "糖浆15ml", "柠檬汁15ml", "茉莉花茶补满"],
+      description: "无",
+      ingredients: ["金酒 30ml", "糖浆 15ml", "柠檬汁 15ml", "茉莉花茶 补满"],
       method: "搅拌",
       tags: ["金酒", "柠檬汁", "茉莉花茶", "糖浆"],
       color: "#B97233",
       abv: "?%",
-      origin: "null",
+      origin: "无",
       garnish: "百里香",
       glass: "",
       image: "/images/jasmine-tea-gin.jpg"
@@ -326,4 +326,12 @@ const cocktails = [
   // 所有可用标签（从鸡尾酒数据中提取）
   const allTags = [...new Set(cocktails.flatMap(cocktail => cocktail.tags))];
   
-  export { cocktails, allTags };
+  // 新增杯型数据
+  const allGlasses = [...new Set(cocktails.map(c => c.glass))].filter(Boolean);
+  
+  // 新增成分数据（处理原始成分数据）
+  const allIngredients = [...new Set(cocktails.flatMap(c => 
+    c.ingredients.map(ing => ing.split(' ')[0])
+  ))].filter(Boolean);
+  
+  export { cocktails, allTags, allGlasses, allIngredients };
