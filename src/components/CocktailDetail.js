@@ -11,27 +11,6 @@ export default function CocktailDetail({ cocktail }) {
           />
           返回所有鸡尾酒
         </Link>
-        
-        <div className="p-6 md:p-8 relative bg-gradient-to-br from-black/20 to-black/10">
-          {/* 新增装饰元素 */}
-          <div className="absolute top-4 right-4 opacity-20">
-            <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-            </svg>
-          </div>
-        </div>
-        
-        <ul className="space-y-3">
-          {cocktail.ingredients.map((ingredient, index) => (
-            <li key={index} className="flex items-center p-3 bg-amber-50 rounded-lg">
-              <div className="mr-3 w-6 h-6 bg-amber-500 text-white rounded-full flex items-center justify-center">
-                {index + 1}
-              </div>
-              {ingredient}
-            </li>
-          ))}
-        </ul>
-        
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* 标题部分 */}
           <div className="p-6 md:p-8 relative" style={{ backgroundColor: cocktail.color }}>
