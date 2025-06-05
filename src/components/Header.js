@@ -2,25 +2,25 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-amber-700 text-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-        <div className="flex items-center space-x-3 mb-4 md:mb-0">
-          <div className="bg-white rounded-full p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" viewBox="0 0 20 20" fill="currentColor">
+    <header className="bg-gradient-to-r from-amber-700 to-amber-600 shadow-lg">
+      <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <div className="p-2 bg-amber-100/10 rounded-full backdrop-blur-sm">
+            <svg className="h-9 w-9 text-amber-200" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
             </svg>
           </div>
-          <div>
-            <Link href="/">
-              <h1 className="text-2xl font-bold cursor-pointer">Cocktail Collection</h1>
-            </Link>
-            <p className="text-amber-200 text-sm">探索您的完美饮品</p>
-          </div>
+          <Link href="/">
+            <h1 className="text-3xl font-bold text-amber-100 hover:text-white transition-colors">
+              Cocktail<span className="text-amber-300">+</span>
+            </h1>
+          </Link>
         </div>
-        
-        <nav className="flex space-x-6">
-          <Link href="/" className="hover:text-amber-200 transition">首页</Link>
-          <Link href="/featured" className="hover:text-amber-200 transition">精选</Link>
+        <nav className="flex space-x-8">
+          <Link href="/" className="text-amber-100 hover:text-white flex items-center group">
+            <span className="mr-2">首页</span>
+            <div className="w-4 h-[2px] bg-transparent group-hover:bg-amber-200 transition-all"/>
+          </Link>
         </nav>
       </div>
     </header>

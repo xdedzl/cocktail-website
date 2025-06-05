@@ -27,12 +27,11 @@ export default function FilterBar({ allTags, activeFilters, toggleFilter }) {
           <button
             key={tag}
             onClick={() => toggleFilter(tag)}
-            className={`px-3 py-1 rounded-full text-sm transition ${
-              activeFilters.includes(tag)
-                ? 'bg-amber-600 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-            }`}
-          >
+            className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
+              activeFilters.includes(tag) 
+                ? 'bg-gradient-to-r from-amber-600 to-amber-500 text-white shadow-lg' 
+                : 'bg-amber-50 text-amber-900 hover:bg-amber-100 shadow-md'
+            }`}>
             {tag}
           </button>
         ))}

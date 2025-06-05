@@ -57,7 +57,7 @@ export default function Home() {
       
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-amber-800 mb-2">鸡尾酒收藏</h1>
+          <h1 className="text-4xl font-bold text-amber-800 mb-2">鸡尾酒+</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             探索我们精选的经典和创意鸡尾酒配方。使用筛选器找到您完美的饮料！
           </p>
