@@ -307,6 +307,20 @@ const cocktails = [
       glass: "",
       image: "/images/betweent-the-sheets.jpg"
     },
+    {
+      id: 23,
+      name: "金茉莉 | Jasmine tea gin",
+      description: "null",
+      ingredients: ["金酒30ml", "糖浆15ml", "柠檬汁15ml", "茉莉花茶补满"],
+      method: "搅拌",
+      tags: ["金酒", "柠檬汁", "茉莉花茶", "糖浆"],
+      color: "#B97233",
+      abv: "?%",
+      origin: "null",
+      garnish: "百里香",
+      glass: "",
+      image: "/images/jasmine-tea-gin.jpg"
+    },
   ];
   
   // 所有可用标签（从鸡尾酒数据中提取）
