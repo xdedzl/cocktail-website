@@ -68,8 +68,8 @@ export default function CocktailDetail({ cocktail }) {
             {/* 详情区域 */}
             <div className="md:col-span-2">
               <div className="mb-8">
-                <h2 className="text-2xl font-bold text-amber-800 mb-4">配方故事</h2>
-                <p className="text-gray-700 leading-relaxed">
+                <h2 className="text-2xl font-bold text-amber-200 mb-4">配方故事</h2>
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                   {cocktail.description}
                 </p>
               </div>
