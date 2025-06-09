@@ -347,7 +347,7 @@ const cocktails = [
       origin: "无",
       garnish: "无",
       glass: "shot杯",
-      image: "/images/jasmine-tea-gin.jpg"
+      image: "/images/B-52.jpg"
     },
   ];
   
