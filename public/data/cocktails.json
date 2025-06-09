@@ -11,7 +11,8 @@
         "origin": "自主配方",
         "garnish": "无",
         "glass": "长饮杯",
-        "image": "/images/rum-milk.jpg"
+        "image": "/images/rum-milk.jpg",
+        "rating": 4
     },
     {
         "id": 2,
@@ -25,7 +26,8 @@
         "origin": "自主配方",
         "garnish": "无",
         "glass": "长饮杯",
-        "image": "/images/rum-pawpaw.jpg"
+        "image": "/images/rum-pawpaw.jpg",
+        "rating": 4
     },
     {
         "id": 3,
@@ -39,7 +41,8 @@
         "origin": "美国",
         "garnish": "柠檬，橙皮",
         "glass": "古典杯",
-        "image": "/images/cuba-libre.jpg"
+        "image": "/images/cuba-libre.jpg",
+        "rating": 4
     },
     {
         "id": 4,
@@ -53,7 +56,8 @@
         "origin": "美国",
         "garnish": "柠檬，橙皮",
         "glass": "威士忌杯",
-        "image": "/images/god-father.jpg"
+        "image": "/images/god-father.jpg",
+        "rating": 4
     },
     {
         "id": 5,
@@ -67,7 +71,8 @@
         "origin": "原创",
         "garnish": "柠檬，橙皮",
         "glass": "威士忌杯",
-        "image": "/images/god-father01.jpg"
+        "image": "/images/god-father01.jpg",
+        "rating": 4
     },
     {
         "id": 6,
@@ -81,7 +86,8 @@
         "origin": "美国",
         "garnish": "柠檬",
         "glass": "长饮杯",
-        "image": "/images/hightball.jpg"
+        "image": "/images/hightball.jpg",
+        "rating": 4
     },
     {
         "id": 7,
@@ -95,7 +101,8 @@
         "origin": "美国",
         "garnish": "柠檬",
         "glass": "古典杯",
-        "image": "/images/amaretto-sour.jpg"
+        "image": "/images/amaretto-sour.jpg",
+        "rating": 4
     },
     {
         "id": 8,
@@ -109,7 +116,8 @@
         "origin": "美国",
         "garnish": "柠檬",
         "glass": "玛格丽特杯",
-        "image": "/images/margaret.jpg"
+        "image": "/images/margaret.jpg",
+        "rating": 4
     },
     {
         "id": 9,
@@ -123,7 +131,8 @@
         "origin": "无",
         "garnish": "柠檬",
         "glass": "高球杯",
-        "image": "/images/tequila-sunrise.jpg"
+        "image": "/images/tequila-sunrise.jpg",
+        "rating": 4
     },
     {
         "id": 10,
@@ -137,7 +146,8 @@
         "origin": "无",
         "garnish": "柠檬",
         "glass": "长饮杯",
-        "image": "/images/see-you-tomorrow.jpg"
+        "image": "/images/see-you-tomorrow.jpg",
+        "rating": 4
     },
     {
         "id": 11,
@@ -151,7 +161,8 @@
         "origin": "无",
         "garnish": "柠檬",
         "glass": "长饮杯",
-        "image": "/images/screwdriver-cocktail.jpg"
+        "image": "/images/screwdriver-cocktail.jpg",
+        "rating": 4
     },
     {
         "id": 12,
@@ -165,7 +176,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "威士忌杯",
-        "image": "/images/possessive.jpg"
+        "image": "/images/possessive.jpg",
+        "rating": 4
     },
     {
         "id": 13,
@@ -179,7 +191,8 @@
         "origin": "无",
         "garnish": "柠檬",
         "glass": "香槟杯",
-        "image": "/images/twilight.jpg"
+        "image": "/images/twilight.jpg",
+        "rating": 4
     },
     {
         "id": 14,
@@ -193,7 +206,8 @@
         "origin": "原创",
         "garnish": "柠檬",
         "glass": "shot杯",
-        "image": "/images/red-blue.jpg"
+        "image": "/images/red-blue.jpg",
+        "rating": 4
     },
     {
         "id": 15,
@@ -207,7 +221,8 @@
         "origin": "无",
         "garnish": "柠檬",
         "glass": "长饮杯",
-        "image": "/images/long-island-ice-tea.jpg"
+        "image": "/images/long-island-ice-tea.jpg",
+        "rating": 4
     },
     {
         "id": 16,
@@ -221,7 +236,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "长饮杯",
-        "image": "/images/rainbow.jpg"
+        "image": "/images/rainbow.jpg",
+        "rating": 4
     },
     {
         "id": 17,
@@ -235,7 +251,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "马天尼杯",
-        "image": "/images/pink-lady.jpg"
+        "image": "/images/pink-lady.jpg",
+        "rating": 4
     },
     {
         "id": 18,
@@ -249,7 +266,8 @@
         "origin": "原创",
         "garnish": "苹果切片",
         "glass": "马天尼杯",
-        "image": "/images/green-apple-park.jpg"
+        "image": "/images/green-apple-park.jpg",
+        "rating": 4
     },
     {
         "id": 19,
@@ -263,7 +281,8 @@
         "origin": "无",
         "garnish": "橙皮",
         "glass": "威士忌杯",
-        "image": "/images/negroni.jpg"
+        "image": "/images/negroni.jpg",
+        "rating": 4
     },
     {
         "id": 20,
@@ -277,7 +296,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "马天尼杯",
-        "image": "/images/side-car.jpg"
+        "image": "/images/side-car.jpg",
+        "rating": 4
     },
     {
         "id": 21,
@@ -291,7 +311,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "马天尼杯",
-        "image": "/images/rum-car.jpg"
+        "image": "/images/rum-car.jpg",
+        "rating": 4
     },
     {
         "id": 22,
@@ -305,7 +326,8 @@
         "origin": "无",
         "garnish": "无",
         "glass": "",
-        "image": "/images/betweent-the-sheets.jpg"
+        "image": "/images/betweent-the-sheets.jpg",
+        "rating": 4
     },
     {
         "id": 23,
@@ -319,7 +341,8 @@
         "origin": "无",
         "garnish": "百里香",
         "glass": "",
-        "image": "/images/jasmine-tea-gin.jpg"
+        "image": "/images/jasmine-tea-gin.jpg",
+        "rating": 4
     },
     {
         "id": 24,
@@ -333,7 +356,8 @@
         "origin": "古巴",
         "garnish": "薄荷叶",
         "glass": "海波杯",
-        "image": "/images/mojito.jpg"
+        "image": "/images/mojito.jpg",
+        "rating": 4
     },
     {
         "id": 25,
@@ -347,6 +371,7 @@
         "origin": "无",
         "garnish": "无",
         "glass": "shot杯",
-        "image": "/images/B-52.jpg"
+        "image": "/images/B-52.jpg",
+        "rating": 4
     }
 ]
